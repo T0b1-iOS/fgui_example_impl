@@ -1,0 +1,3 @@
+[submodule "fgui"]
+	path = fgui
+	url = https://github.com/otvv/fgui.git

@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;FGUIEXAMPLEIMPL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -101,6 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;FGUIEXAMPLEIMPL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -116,6 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;FGUIEXAMPLEIMPL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -133,6 +136,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;FGUIEXAMPLEIMPL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -143,6 +147,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="aliases.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\button.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\checkbox.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\colorlist.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\form.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\groupbox.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\keybinder.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\label.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\listbox.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\multibox.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\slider.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\tabs.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\textbox.cpp" />
+    <ClCompile Include="fgui\FGUI\widgets\widgets.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="btn_code.h" />
+    <ClInclude Include="fgui\FGUI\dependencies\aliases.hpp" />
+    <ClInclude Include="fgui\FGUI\dependencies\builder.hpp" />
+    <ClInclude Include="fgui\FGUI\dependencies\definitions.hpp" />
+    <ClInclude Include="fgui\FGUI\dependencies\helpers.hpp" />
+    <ClInclude Include="fgui\FGUI\FGUI.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\button.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\checkbox.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\colorlist.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\form.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\groupbox.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\keybinder.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\label.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\listbox.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\multibox.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\slider.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\tabs.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\textbox.hpp" />
+    <ClInclude Include="fgui\FGUI\widgets\widgets.hpp" />
+    <ClInclude Include="sdk.h" />
+    <ClInclude Include="vmt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".clang-format" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
